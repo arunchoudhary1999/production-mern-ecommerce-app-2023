@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.search-form input {
+  border: none;
+  border-radius: 0;
+}
+.search-form button {
+  background-color: #000000;
+  border-radius: 0;
+  color: white;
+}
+
+/* =============================
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 25px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.cat-btn:hover {
+  background-color: #434343;
+  color: white;
+}
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+  margin-top: 100px !important;
+}
+
+.dashboard-menu h4 {
+  background-color: #434343 !important;
+  color: white;
+  padding: 20px 0px;
+}
+
+/* Category Desktop */
+.categoryDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 78.7vh;
+  /* background-color: red; */
+  margin-top: 60px;
+  padding-bottom: 35px;
+}
+
+.categoryAllDesktop {
+  min-height: 78.7vh;
+  /* background-color: red; */
+}
+
+.adminDashboardAllDesktop {
+  min-height: 78.7vh;
+}
+
+/* For responsive using media query */
+/* Header */
+@media screen and (max-width: 991px) {
+  .headerTitleResp {
+    /* color: red; */
+    position: absolute;
+    top: 10px;
+    /* background-color: yellow; */
+    display: flex;
+    font-size: 22px;
+    padding-left: 52px;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .headerLogoResp {
+    border: 1px solid rgb(199, 199, 199);
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin-top: -8px;
+    margin-left: -30px;
+    padding: 6px 10px ;
+  }
+}
+
+/* Home */
+@media screen and (max-width: 991px) {
+  .filters h4{
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .home-page {
+    margin-top: 0 !important;
+    margin: 0;
+  }
+  .homeProductResp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Product Details */
+@media screen and (max-width: 991px) {
+  .productDetailsResp {
+    /* background-color: red; */
+    margin: 0;
+  }
+  .productDetailsHeaderResp {
+    /* padding: 20px 0px 0px 0px; */
+  }
+}
+
+/* Cart Page */
+@media screen and (max-width: 991px) {
+  .cartTopTitleResp {
+    background-color: #ededff;
+    margin: 0 !important;
+    /* padding: 0 !important; */
+  }
+  .cart-page{
+    /* background-color: #000000; */
+    margin: 0;
+    padding: 0px 0px 20px 0;
+    width: 100%;
+  }
+  .cart-page .card{
+    min-height: 550px !important;
+    /* background-color: red; */
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cartImgDiv {
+    /* background-color: blue; */
+    height: 70%;
+  }
+
+  .cartImg {
+    height: 100%;
+  }
+}
+
+/* Admin Dashboard */
+@media screen and (max-width: 991px) {
+  .dashboard {
+    /* background-color: red; */
+    margin-left: 0 !important;
+  }
+
+  .cardResp{
+    margin: 20px 0 0 0;
+    width: 100% !important;
+  }
+}
+
+/* Create Categary */
+@media screen and (max-width: 991px) {
+  .createCategoryForm {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .createCategoryFormDiv{
+    margin: 0 !important;
+  }
+  .createCategoryInput {
+    width: 100% !important;
+    background-color: #434343;
+  }
+  .createCategoryTable {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+/* CreateProduct */
+@media screen and (max-width: 991px) {
+  .createProductTitleResp{
+    /* background: red; */
+    padding: 10px 10px 10px 2px !important;
+  }
+  .createProductTitleResp h1 {
+    /* background-color: red; */
+    padding: 5px 10px ;
+  }
+  .createProductInputResp {
+    /* background: blue; */
+    min-width: 100%;
+  }
+  .createProductSelectResp {
+    padding: 2px 0px;
+  }
+  .createProductUploadResp {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .createProductInpFieldResp {
+    padding: 10px 13px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .productsDashResp {
+    margin: 0;
+  }
+  .productsResp {
+    /* padding: 20px 0; */
+    /* background-color: blue; */
+  }
+  .productsCardResp {
+  }
+  .productsOneCardResp {
+    width: 100%;
+    padding: 10px;
+  }
+  .productsImgCardResp {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Admin Orders */
+@media screen and (max-width: 991px) {
+  .ordersDashResp {
+    margin: 0;
+  }
+  .ordersResp {
+    /* background: red;  */
+    width: 100%;
+    /* padding: 10px; */
+    margin: 10px 0;
+  }
+  .ordersDetailsResp {
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .ordersTableResp {
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .ordersImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Category */
+@media screen and (max-width: 991px) {
+  .catagoryAll {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Search Result */
+@media screen and (max-width: 991px) {
+  .searchResult {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .searchProductResult {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Update Product */
+@media screen and (max-width: 991px) {
+  /* .updateProductContResp {
+    background-color: yellow;
+    margin: 0 !important;
+    margin-top: 55px !important;
+    padding-top: 35px !important;
+    padding-bottom: 30px !important;
+  }
+  .updateProductResp {
+    background-color: red;
+    margin: 0 !important;
+  } */
+  .updateDashboard {
+    margin-top: 100px !important;
+    margin-left: 0 !important;
+  }
+  .updateProductTitleResp{
+    /* background: red; */
+    padding: 10px 10px 10px 2px !important;
+  }
+  .updateProductTitleResp h1 {
+    /* background-color: red; */
+    padding: 5px 10px ;
+  }
+  .updateProductInputResp {
+    /* background: blue; */
+    min-width: 100%;
+  }
+  .updateProductSelectResp {
+    padding: 2px 0px;
+  }
+  .updateProductUploadResp {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .updateProductInpFieldResp {
+    padding: 10px 13px;
+  }
+}
+
+/* Admin Dashboard */
+@media screen and (max-width: 991px) {
+  .adminDashboard {
+    /* background-color: red; */
+    margin-left: 0 !important;
+  }
+
+  .cardResp{
+    margin: 20px 0 0 0;
+    width: 100% !important;
+  }
+}
